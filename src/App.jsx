@@ -1,3 +1,4 @@
+import { Projects } from "./components/Projects";
 import { HomePage } from "./components/HomePage";
 import { Header } from "./components/Header";
 // import reactLogo from './assets/react.svg'
@@ -12,6 +13,7 @@ function App() {
     <>
       <Header />
       <HomePage />
+      <Projects />
     </>
   );
 }

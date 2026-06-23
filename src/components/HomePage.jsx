@@ -2,11 +2,11 @@ export function HomePage() {
   return (
     <>
       {/* <html lang="en"> */}
-      <body className="bg-gray-950 min-h-screen flex px-6 py-6 justify-center p-6 font-dm">
+      <body className="bg-gray-950 min-h-screen flex px-6 py-6 justify-center p-6 font-dm gap-6  ">
         {/* Hero Section  */}
-        <section className="grid grid-cols-2 w-full max-w-5xl rounded-2xl overflow-hidden min-h-[520px]">
+        <section className="grid grid-cols-2 w-full max-w-5xl rounded-2xl overflow-hidden min-h-[520px] ">
           {/* Left Grid  */}
-          <div className="bg-black flex flex-col justify-center gap-4 pl-6 py-14 ">
+          <div className="bg-black flex flex-col justify-center gap-4 pl-6 py-6 ">
             {/* Eyebrow max-[890px]:px-10 py-12 */}
             {/* <p className="text-white text-base font-normal tracking-[2.5px] ">
               Hi! I'm <span className="text-blue-500">Nathanael</span>
@@ -15,15 +15,16 @@ export function HomePage() {
             {/* Name */}
             <div className="flex flex-col gap-1">
               <h1 className="font-syne text-xl font-extrabold text-white leading-tight">
-                Hi! I'm <span className="text-blue-500">Nathanael</span>
+                Hi! I'm{" "}
+                <span className="text-blue-500 sm:text-2xl">Nathanael</span>
               </h1>
-              <p className="font-syne   text-blue-400 font-semibold text-2xl tracking-wide">
+              <p className="font-syne   text-blue-400 font-semibold text-2xl tracking-wide sm:text-3xl">
                 Frontend Developer
               </p>
             </div>
 
             {/* Description */}
-            <p className="text-zinc-400 text-[15px] font-sans leading-relaxed max-w-sm">
+            <p className="text-zinc-400 text-[15px] font-sans leading-relaxed max-w-sm md:text-lg">
               Building modern, responsive, user-friendly and functional web
               applications.
             </p>
@@ -32,15 +33,15 @@ export function HomePage() {
             <div className="flex flex-wrap gap-3 mt-2">
               <a
                 href="#"
-                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium  px-4 py-2 rounded-full border border-blue-600 hover:border-blue-700 transition-colors duration-200 "
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium  px-4 py-2 rounded-full border border-blue-600 hover:border-blue-700 transition-colors duration-200 md:text-base"
               >
-                Let's connect.
+                Let's Connect.
               </a>
               <a
                 href="#"
-                className="bg-transparent hover:bg-blue-500/10 text-white text-xs font-medium px-4 py-2 rounded-full border border-blue-500 transition-colors duration-200 "
+                className="bg-transparent hover:bg-blue-500/10 text-white text-xs font-medium px-4 py-2 rounded-full border border-blue-500 transition-colors duration-200 md:text-base"
               >
-                Download my CV
+                Download My CV
               </a>
             </div>
           </div>
@@ -69,8 +70,8 @@ export function HomePage() {
             {/* Content  */}
             <div className="relative z-10  flex flex-col items-center gap-6 pl-8 pr-6">
               {/* Avatar  */}
-              <div className="w-36 h-36 rounded-full border-2 border-blue-600 flex items-center justify-center">
-                <div className="w-32 h-32 rounded-full bg-slate-900 flex items-center justify-center">
+              <div className="w-36 h-36 rounded-full border-2 border-blue-600 flex items-center justify-center md:w-48 md:h-48">
+                <div className="w-32 h-32 rounded-full bg-slate-900 flex items-center justify-center md:w-40 md:h-40 rounded-full border-1 border-blue-600">
                   <span className="font-syne text-4xl font-extrabold text-blue-500">
                     NP
                   </span>
@@ -79,19 +80,19 @@ export function HomePage() {
 
               {/* Skill tags  */}
               <div className="flex flex-wrap gap-2 justify-center max-w-xs">
-                <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/25 px-3.5 py-1 rounded-full">
+                <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/25 px-3.5 py-1 rounded-full md:text-sm">
                   React
                 </span>
-                <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/25 px-3.5 py-1 rounded-full">
+                <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/25 px-3.5 py-1 rounded-full md:text-sm">
                   TypeScript
                 </span>
-                <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/25 px-3.5 py-1 rounded-full">
+                <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/25 px-3.5 py-1 rounded-full md:text-sm">
                   Tailwind CSS
                 </span>
-                <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/25 px-3.5 py-1 rounded-full">
+                <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/25 px-3.5 py-1 rounded-full md:text-sm">
                   Vanilla HTML/CSS
                 </span>
-                <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/25 px-3.5 py-1 rounded-full">
+                <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/25 px-3.5 py-1 rounded-full md:text-sm">
                   UI Design
                 </span>
               </div>
