@@ -1,10 +1,10 @@
-export function HomePage() {
+export function Hero() {
   return (
     <>
       {/* <html lang="en"> */}
-      <body className="bg-gray-950 min-h-screen flex px-6 py-6 justify-center p-6 font-dm gap-6  ">
+      {/* <body className="bg-gray-950 min-h-screen flex px-6 py-6 justify-center p-6 font-dm gap-6  "> */}
         {/* Hero Section  */}
-        <section className="grid grid-cols-2 w-full max-w-5xl rounded-2xl overflow-hidden min-h-[520px] ">
+        <section className="grid grid-cols-2 w-full justify-center  max-w-5xl rounded-2xl overflow-hidden min-h-[520px] ">
           {/* Left Grid  */}
           <div className="bg-black flex flex-col justify-center gap-4 pl-6 py-6 ">
             {/* Eyebrow max-[890px]:px-10 py-12 */}
@@ -99,7 +99,7 @@ export function HomePage() {
             </div>
           </div>
         </section>
-      </body>
+      {/* </body> */}
       {/* </html> */}
     </>
   );

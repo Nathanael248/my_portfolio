@@ -1,20 +1,20 @@
-import { Projects } from "./components/Projects";
-import { HomePage } from "./components/HomePage";
 import { Header } from "./components/Header";
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-// import heroImg from './assets/hero.png'
+import { Hero } from "./components/sections/Hero";
+import { Projects } from "./components/Projects";
+import  About  from "./components/sections/About";
+
 import "./App.css";
 
-function App() {
+export function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
+    <body className="bg-gray-950 min-h-screen flex px-6 justify-center  font-dm gap-6 ">
       <Header />
-      <HomePage />
+      <Hero />
+      <About />
       <Projects />
-    </>
+    </body>
   );
 }
 
