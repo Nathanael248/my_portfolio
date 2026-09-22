@@ -15,11 +15,11 @@ export  function AboutSection() {
           Hello...
         </p>
         <h1 className="font-['Share_Tech_Mono'] text-4xl text-white mb-5 leading-tight">
-          I'm <span className="text-blue-500">Nathy Papy!</span>
+          I'm <span className="text-blue-500">Nathaniel!</span>
         </h1>
         <div className="flex items-center justify-center flex-wrap gap-2">
           <span className="font-['Share_Tech_Mono'] text-xs text-zinc-400 flex items-center gap-1.5">
-            <i className="ti ti-map-pin text-blue-500 text-sm" aria-hidden="true" /> Abuja, NG
+            <i className="ti ti-map-pin text-blue-500 text-sm" aria-hidden="true" /> Oyo State, NG
           </span>
           <span className="text-zinc-700 text-base">·</span>
           <span className="font-['Share_Tech_Mono'] text-xs text-zinc-400 flex items-center gap-1.5">
@@ -100,12 +100,12 @@ export  function AboutSection() {
                   products we interact with every day actually work behind the scenes. That curiosity grew
                   into a genuine interest in web development and turning ideas into useful software.
                 </p>
-                <p className="text-zinc-400 text-[15px] font-light leading-relaxed">
+                <p className="text-zinc-300 text-[15px] font-light leading-relaxed">
                   What motivates me most is solving problems and building software that makes real-life
                   tasks easier. I enjoy taking something complicated, breaking it down, and finding a
                   simpler and more practical approach.
                 </p>
-                <p className="text-zinc-400 text-[15px] font-light leading-relaxed">
+                <p className="text-zinc-300 text-[15px] font-light leading-relaxed">
                   I'm also deeply interested in good design — thoughtful design creates a strong first
                   impression even before someone has used a product, communicating clarity, attention to
                   detail, and the standard it aims to deliver.
@@ -117,11 +117,11 @@ export  function AboutSection() {
                   I'm an aspiring Frontend Developer focused on building responsive, user-friendly web
                   experiences with HTML, CSS, JavaScript, React, and Tailwind CSS.
                 </p>
-                <p className="text-zinc-400 text-[15px] font-light leading-relaxed">
+                <p className="text-zinc-300 text-[15px] font-light leading-relaxed">
                   Through hands-on projects and continuous learning, I've developed practical experience
                   in creating interfaces, working with APIs, and using modern frontend tools and workflows.
                 </p>
-                <p className="text-zinc-400 text-[15px] font-light leading-relaxed">
+                <p className="text-zinc-300 text-[15px] font-light leading-relaxed">
                   I'm looking to grow through real-world opportunities where I can contribute, solve
                   problems, and continue developing as a software developer.
                 </p>

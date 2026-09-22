@@ -4,7 +4,7 @@ export function Hero() {
       {/* <html lang="en"> */}
       {/* <body className="bg-gray-950 min-h-screen flex px-6 py-6 justify-center p-6 font-dm gap-6  "> */}
         {/* Hero Section  */}
-        <section className="grid grid-cols-2 w-full justify-center  max-w-5xl rounded-2xl overflow-hidden min-h-[520px] ">
+        <section className="grid grid-cols-2 w-full  m-auto  max-w-5xl rounded-2xl overflow-hidden min-h-[520px] ">
           {/* Left Grid  */}
           <div className="bg-black flex flex-col justify-center gap-4 pl-6 py-6 ">
             {/* Eyebrow max-[890px]:px-10 py-12 */}
@@ -15,8 +15,8 @@ export function Hero() {
             {/* Name */}
             <div className="flex flex-col gap-1">
               <h1 className="font-syne text-xl font-extrabold text-white leading-tight">
-                Hi! I'm{" "}
-                <span className="text-blue-500 sm:text-2xl">Nathanael</span>
+                {/* Hi! I'm{" "} */}
+                <span className="text-blue-500 sm:text-3xl">OKUNADE Nathaniel</span>
               </h1>
               <p className="font-syne   text-blue-400 font-semibold text-2xl tracking-wide sm:text-3xl">
                 Frontend Developer
