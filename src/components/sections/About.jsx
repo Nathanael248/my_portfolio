@@ -6,27 +6,27 @@ export  function AboutSection() {
   const [activeTab, setActiveTab] = useState("about");
 
   return (
-    <section className="bg-[#0d0d0d] w-full rounded-2xl px-12 py-14 font-['DM_Sans']">
+    <section id='About' className="bg-black w-[1260] w-full rounded- px-12 py-14 my-10 font-['DM_Sans']">
 
       {/* ── TOP HERO BLOCK ── */}
       <div className="text-center mb-12">
         <p className="font-['Share_Tech_Mono'] text-sm text-zinc-500 tracking-[2px] flex items-center justify-center gap-2 mb-3">
           <i className="ti ti-terminal-2 text-blue-500 text-base" aria-hidden="true" />
-          Hello...
+          About me
         </p>
         <h1 className="font-['Share_Tech_Mono'] text-4xl text-white mb-5 leading-tight">
-          I'm <span className="text-blue-500">Nathaniel!</span>
+          I'm <span className="text-blue-600">Nathaniel!</span>
         </h1>
         <div className="flex items-center justify-center flex-wrap gap-2">
-          <span className="font-['Share_Tech_Mono'] text-xs text-zinc-400 flex items-center gap-1.5">
+          <span className="font-[inter]  text-xs text-zinc-400 flex items-center gap-1.5">
             <i className="ti ti-map-pin text-blue-500 text-sm" aria-hidden="true" /> Oyo State, NG
           </span>
           <span className="text-zinc-700 text-base">·</span>
-          <span className="font-['Share_Tech_Mono'] text-xs text-zinc-400 flex items-center gap-1.5">
+          <span className="font-[inter]  text-xs text-zinc-400 flex items-center gap-1.5">
             <i className="ti ti-mail text-blue-500 text-sm" aria-hidden="true" /> nathy@dev.com
           </span>
           <span className="text-zinc-700 text-base">·</span>
-          <span className="font-['Share_Tech_Mono'] text-xs text-zinc-400 flex items-center gap-1.5">
+          <span className="font-[inter]  text-xs text-zinc-400 flex items-center gap-1.5">
             <i className="ti ti-brand-github text-blue-500 text-sm" aria-hidden="true" /> @nathypapy
           </span>
         </div>
@@ -41,21 +41,22 @@ export  function AboutSection() {
       </div>
 
       {/* ── TWO-COL ── */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 h-full">
 
         {/* Left — code visual + stack */}
         <div className="flex flex-col gap-5">
           {/* Code block visual */}
-          <div className="bg-[#111] border border-zinc-800 rounded-xl p-5 flex flex-col gap-2">
+          {/* <div className="bg-[#111] border border-zinc-800 rounded-xl p-5 flex flex-col gap-2">
             {[["85%","0.8"],["68%","0.65"],["40%","0.5"],null,["85%","0.8"],["68%","0.65"],["28%","0.4"],null,["40%","0.5"],["28%","0.4"]].map((line, i) =>
               line === null
                 ? <div key={i} className="h-1.5" />
                 : <div key={i} className="h-2 rounded-full bg-blue-700" style={{ width: line[0], opacity: line[1] }} />
             )}
-          </div>
+          </div> */}
+          <img src="/src/assets/Nathaniel.jpg" alt="Developer's face" className="h-150 w-136 px-8 object-cover"/>
 
           {/* Tech stack */}
-          <div>
+          {/* <div>
             <p className="font-['Share_Tech_Mono'] text-[10px] tracking-[1.5px] uppercase text-zinc-500 mb-3">
               Tech stack
             </p>
@@ -69,7 +70,7 @@ export  function AboutSection() {
                 </span>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Right — tabs + content */}
@@ -80,7 +81,7 @@ export  function AboutSection() {
               <button
                 key={id}
                 onClick={() => setActiveTab(id)}
-                className={`text-sm px-5 py-2 rounded-lg transition-all duration-200 ${
+                className={`text-sm px-5 py-2 font-[inter]  rounded-lg transition-all duration-200 ${
                   activeTab === id
                     ? "bg-blue-600 text-white"
                     : "bg-transparent text-zinc-500 hover:text-white"
@@ -92,20 +93,20 @@ export  function AboutSection() {
           </div>
 
           {/* Tab content */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col text-[20px] leading-8 gap-6">
             {activeTab === "about" ? (
               <>
-                <p className="text-zinc-300 text-[15px] font-light leading-relaxed">
+                <p className="text-zinc-300  font-light ">
                   My transition into tech started with curiosity — I wanted to understand how the digital
                   products we interact with every day actually work behind the scenes. That curiosity grew
                   into a genuine interest in web development and turning ideas into useful software.
                 </p>
-                <p className="text-zinc-300 text-[15px] font-light leading-relaxed">
+                <p className="text-zinc-300  font-light ">
                   What motivates me most is solving problems and building software that makes real-life
                   tasks easier. I enjoy taking something complicated, breaking it down, and finding a
                   simpler and more practical approach.
                 </p>
-                <p className="text-zinc-300 text-[15px] font-light leading-relaxed">
+                <p className="text-zinc-300  font-light ">
                   I'm also deeply interested in good design — thoughtful design creates a strong first
                   impression even before someone has used a product, communicating clarity, attention to
                   detail, and the standard it aims to deliver.
@@ -113,15 +114,15 @@ export  function AboutSection() {
               </>
             ) : (
               <>
-                <p className="text-zinc-300 text-[15px] font-light leading-relaxed">
+                <p className="text-zinc-300  font-light ">
                   I'm an aspiring Frontend Developer focused on building responsive, user-friendly web
                   experiences with HTML, CSS, JavaScript, React, and Tailwind CSS.
                 </p>
-                <p className="text-zinc-300 text-[15px] font-light leading-relaxed">
+                <p className="text-zinc-300 font-light ">
                   Through hands-on projects and continuous learning, I've developed practical experience
                   in creating interfaces, working with APIs, and using modern frontend tools and workflows.
                 </p>
-                <p className="text-zinc-300 text-[15px] font-light leading-relaxed">
+                <p className="text-zinc-300  font-light ">
                   I'm looking to grow through real-world opportunities where I can contribute, solve
                   problems, and continue developing as a software developer.
                 </p>

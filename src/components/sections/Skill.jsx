@@ -23,7 +23,7 @@ const skills = [
       "Style user-friendly, beautiful designs with layouts, animations, and responsive techniques.",
   },
   {
-    icon: "../assets/icons/react.svg",
+    icon: "../../../assets/hero.png",
     name: "React.js",
     description:
       "Build dynamic, component-driven UIs with hooks, state management, and clean architecture.",
@@ -86,20 +86,16 @@ export default function SkillsSection() {
   const visible = skills.slice(page * PER_PAGE, page * PER_PAGE + PER_PAGE);
 
   return (
-    <section id="skills" className="bg-gray-200 w-full my- px-12 py-24 font-['DM_Sans']">
+    <section className="bg-[#0d0d0d] w-full rounded-2xl px-12 py-14 font-['DM_Sans']">
 
       {/* Heading */}
       <div className="text-center ">
-        {/* <p className="font-['Share_Tech_Mono'] text-sm text-zinc-500 tracking-[2px] flex items-center justify-center gap-2 mb-3">
+        <p className="font-['Share_Tech_Mono'] text-sm text-zinc-500 tracking-[2px] flex items-center justify-center gap-2 mb-3">
           <i className="ti ti-hexagons text-blue-500 text-base" aria-hidden="true" />
           Explore
-        </p> */}
-
-        {/* <div className="border-b border-gray-700 pt-2 w-100% " >Explore &rarr;
-        </div> */}
-
-        <h2 className="font-['Share_Tech_Mono']    pb-2 text-4xl text-white mb-12 ">
-        <span className="text-black">My</span> <span className="text-blue-600 ">Skills</span>
+        </p>
+        <h2 className="font-['Share_Tech_Mono'] text-4xl text-white mb-12">
+          My <span className="text-blue-500">Skill Set</span>
         </h2>
       </div>
 
@@ -124,31 +120,32 @@ export default function SkillsSection() {
       
                 })
           } */}
-          
-        
+          <div >
+
+          { skillCat.map((cat, i) => {return (
+          <div>
             
 
-            <div className="grid grid-cols-1          sm:grid-cols-3 gap-6 min-h-[260px]">
-              {skills.map((skill) => { return  (   
+              <div  className="text-2xl text-white my-6 bg-beige font-['Share_Tech_Mono']">{cat}
+
+               <div className="grid grid-cols-1          sm:grid-cols-3 gap-6 min-h-[260px]">
+                {/* Individual skill */}
+              {visible.map((skill) => { return  (   
               <div>
-{/* 
-                <div  className="text-2xl text-white my-6  font-['Share_Tech_Mono']">{cat}
 
-
-                </div>   */}
+               
 
                     <div
               key={skill.name}
-              className="bg-zinc-900 border border-zinc-800 rounded-2xl p-7 flex flex-col items-center text-center gap-5 hover:border-blue-600/50  transition-all duration-200"
+              className="bg-zinc-900 border border-zinc-800 rounded-2xl p-7 flex flex-col items-center text-center gap-5 hover:border-blue-600/50 transition-all duration-200"
               >
               {/* Icon circle */}
               <div className="w-20 h-20 rounded-full bg-[#0d0d0d] border border-zinc-700 flex items-center justify-center shrink-0">
-                <img src={skill.icon} className="text-3xl text-white" aria-hidden="true" />
+                <i className={`ti ${skill.icon} text-3xl text-white`} aria-hidden="true" />
               </div>
 
               {/* Name */}
               <h3 className="font-['Share_Tech_Mono'] text-lg leading-tight">
-              
                 <span className="text-blue-400">{skill.name.split(" ")[0]}</span>{" "}
                 <span className="text-white">{skill.name.split(" ").slice(1).join(" ")}</span>
               </h3>
@@ -160,22 +157,32 @@ export default function SkillsSection() {
             </div>
                     
 
-                  </div>
+              </div>
 
             
 
                  )}
-                 )}
+              )}
 
           
-            </div> 
-          
+               </div> 
+              </div>
+
+          </div> )
+
+            }
+           )
+          }
+
+
+          </div>
+         
           
         
      
 
       {/* Pagination */}
-      {/* <div className="flex items-center justify-center gap-4 mt-10">
+      <div className="flex items-center justify-center gap-4 mt-10">
         <button
           onClick={() => setPage((p) => Math.max(p - 1, 0))}
           disabled={page === 0}
@@ -185,7 +192,7 @@ export default function SkillsSection() {
         </button>
 
         {/* Dots */}
-        {/* {Array.from({ length: totalPages }).map((_, i) => (
+        {Array.from({ length: totalPages }).map((_, i) => (
           <button
             key={i}
             onClick={() => setPage(i)}
@@ -204,13 +211,13 @@ export default function SkillsSection() {
           className="w-9 h-9 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-blue-500 hover:text-blue-400 disabled:opacity-30 disabled:cursor-not-allowed transition-all duration-200"
         >
           <i className="ti ti-arrow-right text-sm" aria-hidden="true" />
-        </button> */}
-      {/* </div> */} 
+        </button>
+      </div>
 
       {/* Page counter */}
-      {/* <p className="font-['Share_Tech_Mono'] text-center text-xs text-zinc-600 mt-3 tracking-widest">
+      <p className="font-['Share_Tech_Mono'] text-center text-xs text-zinc-600 mt-3 tracking-widest">
         {String(page + 1).padStart(2, "0")} / {String(totalPages).padStart(2, "0")}
-      </p> */}
+      </p>
     </section>
   );
 }

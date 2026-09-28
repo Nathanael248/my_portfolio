@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CTASection() {
   return (
-    <section className="bg-black w-full rounded-2xl px-12 py-16 font-['DM_Sans'] text-center relative overflow-hidden">
+    <section id= 'cta' className="bg-black w-full rounded-2xl px-12 py-24 font-['DM_Sans'] text-center relative overflow-hidden">
       <div
         className="absolute inset-0 z-0"
         style={{

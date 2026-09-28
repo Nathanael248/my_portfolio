@@ -1,12 +1,15 @@
+import "@fontsource/poppins";
+import "@fontsource/roboto";
+import "@fontsource/inter";
 export function Hero() {
   return (
     <>
       {/* <html lang="en"> */}
       {/* <body className="bg-gray-950 min-h-screen flex px-6 py-6 justify-center p-6 font-dm gap-6  "> */}
         {/* Hero Section  */}
-        <section className="grid grid-cols-2 w-full  m-auto  max-w-5xl rounded-2xl overflow-hidden min-h-[520px] ">
+        <section className="grid grid-cols-2 w-full  m-auto  max-w-6xl mx-auto border-1 border-gray-700 border-solid rounded-2xl overflow-hidden min-h-[520px] ">
           {/* Left Grid  */}
-          <div className="bg-black flex flex-col justify-center gap-4 pl-6 py-6 ">
+          <div className="bg-black flex flex-col justify-center gap-6 pl-14 py-6 ">
             {/* Eyebrow max-[890px]:px-10 py-12 */}
             {/* <p className="text-white text-base font-normal tracking-[2.5px] ">
               Hi! I'm <span className="text-blue-500">Nathanael</span>
@@ -14,11 +17,11 @@ export function Hero() {
 
             {/* Name */}
             <div className="flex flex-col gap-1">
-              <h1 className="font-syne text-xl font-extrabold text-white leading-tight">
+              <h1 className="font-[roboto] font-bold text-4xl mb-4 font- text-white leading-tight">
                 {/* Hi! I'm{" "} */}
-                <span className="text-blue-500 sm:text-3xl">OKUNADE Nathaniel</span>
+                <span className="text-blue-600 font-roboto sm:text-">Okunade Nathaniel</span>
               </h1>
-              <p className="font-syne   text-blue-400 font-semibold text-2xl tracking-wide sm:text-3xl">
+              <p className="font-[inter]   text-blue-500 font-semibold text-2xl tracking-wide mb-4 sm:text-2xl">
                 Frontend Developer
               </p>
             </div>
@@ -33,13 +36,13 @@ export function Hero() {
             <div className="flex flex-wrap gap-3 mt-2">
               <a
                 href="#"
-                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium  px-4 py-2 rounded-full border border-blue-600 hover:border-blue-700 transition-colors duration-200 md:text-base"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium  px-4 py-2 rounded-full border border-blue-600 font-[inter] hover:border-blue-700 transition-colors duration-200 md:text-base"
               >
                 Let's Connect.
               </a>
               <a
                 href="#"
-                className="bg-transparent hover:bg-blue-500/10 text-white text-xs font-medium px-4 py-2 rounded-full border border-blue-500 transition-colors duration-200 md:text-base"
+                className="bg-transparent font-[inter] hover:bg-blue-500/10 text-white text-xs font-medium px-4 py-2 rounded-full border border-blue-500 transition-colors duration-200 md:text-base"
               >
                 Download My CV
               </a>
@@ -79,7 +82,7 @@ export function Hero() {
               </div>
 
               {/* Skill tags  */}
-              <div className="flex flex-wrap gap-2 justify-center max-w-xs">
+              <div className="flex flex-wrap gap-2 justify-center max-w-xs font-[inter] ">
                 <span className="text-xs text-blue-400 bg-blue-500/10 border border-blue-500/25 px-3.5 py-1 rounded-full md:text-sm">
                   React
                 </span>

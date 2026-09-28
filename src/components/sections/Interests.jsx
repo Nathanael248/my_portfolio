@@ -20,7 +20,7 @@ const interests = [
 
 export default function InterestsSection() {
   return (
-    <section className="bg-[#0d0d0d] w-full rounded-2xl px-12 py-14 font-['DM_Sans']">
+    <section className="bg-[#0d0d0d] w-full rounded-2xl px-12 py-24 font-['DM_Sans']">
       <p className="font-['Share_Tech_Mono'] text-xs text-blue-500 tracking-[2.5px] uppercase mb-2.5">
         The person behind the code
       </p>
