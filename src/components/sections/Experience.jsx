@@ -4,9 +4,9 @@ const experiences = [
   {
     id: "it",
     role: "IT Support / Computer Maintenance",
-    company: "Company / Organization Name",
-    location: "Location",
-    period: "Dates",
+    company: "International Institute of Tropical Agriculture(IITA)",
+    location: "Ibadan",
+    period: "June 2024 - September 2024",
     icon: "ti-device-desktop",
     type: "Professional",
     bullets: [
@@ -22,7 +22,7 @@ const experiences = [
     role: "Self-Directed Frontend Developer",
     company: "Independent",
     location: "",
-    period: "Month Year – Present",
+    period: "May 2025 – Present",
     icon: "ti-code",
     type: "Development",
     bullets: [
@@ -60,18 +60,18 @@ export default function ExperienceSection() {
               className={`flex items-start gap-3 px-4 py-4 rounded-xl text-left transition-all duration-200 w-full border ${
                 active === exp.id
                   ? "bg-blue-600/15 border-blue-600/40 text-white"
-                  : "bg-transparent border-transparent text-zinc-500 hover:text-zinc-300 hover:bg-zinc-900"
+                  : "bg-transparent border-transparent text-zinc-400 hover:text-zinc-300 hover:bg-zinc-900"
               }`}
             >
               <i
                 className={`ti ${exp.icon} text-base mt-0.5 shrink-0 ${
-                  active === exp.id ? "text-blue-400" : "text-zinc-600"
+                  active === exp.id ? "text-blue-400" : "text-zinc-400"
                 }`}
                 aria-hidden="true"
               />
               <div>
                 <p className="text-sm font-normal leading-snug">{exp.role}</p>
-                <p className={`text-xs mt-1 ${active === exp.id ? "text-blue-400" : "text-zinc-600"}`}>
+                <p className={`text-xs mt-1 ${active === exp.id ? "text-blue-400" : "text-zinc-400"}`}>
                   {exp.type}
                 </p>
               </div>
@@ -82,14 +82,14 @@ export default function ExperienceSection() {
         <div className="bg-[#111] border border-zinc-800 rounded-2xl p-7 flex flex-col gap-6">
           <div className="pb-5 border-b border-zinc-800">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-xl bg-blue-600/15 border border-blue-600/30 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-blue-800 border border-blue-600/30 flex items-center justify-center shrink-0">
                 <i className={`ti ${current.icon} text-blue-400 text-lg`} aria-hidden="true" />
               </div>
               <div>
                 <h3 className="font-['Share_Tech_Mono'] text-white text-base leading-tight">
                   {current.role}
                 </h3>
-                <p className="text-zinc-500 text-xs mt-0.5">
+                <p className="text-zinc-400 text-xs mt-0.5">
                   {current.company}{current.location ? ` · ${current.location}` : ""}
                 </p>
               </div>

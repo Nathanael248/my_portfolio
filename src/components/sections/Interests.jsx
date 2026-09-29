@@ -13,7 +13,7 @@ const interests = [
   },
   {
     icon: "ti-bible",
-    label: "Faith",
+    label: "Learning",
     desc: "My faith is central to who I am and how I approach life and work.",
   },
 ];

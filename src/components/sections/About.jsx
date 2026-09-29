@@ -15,7 +15,7 @@ export  function AboutSection() {
           About me
         </p>
         <h1 className="font-['Share_Tech_Mono'] text-4xl text-white mb-5 leading-tight">
-          I'm <span className="text-blue-600">Nathaniel!</span>
+          Okunade <span className="text-blue-600">Nathaniel!</span>
         </h1>
         <div className="flex items-center justify-center flex-wrap gap-2">
           <span className="font-[inter]  text-xs text-zinc-400 flex items-center gap-1.5">
