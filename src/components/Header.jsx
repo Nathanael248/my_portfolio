@@ -16,7 +16,12 @@ export function Header() {
      max-[900px]: max-w-2xl
      
      items-center*/}
-        <span className="h-6  items-center">NATHY PAPY</span>
+        <img
+          src="/My_logo.svg"
+          alt="ON logo"
+          className="w-12 h-10"
+        />
+        {/* <span className="h-6  items-center">NATHY PAPY</span> */}
         <div className=" hidden justify-between items-center  gap-6 text-white md:flex">
           {/* space-x-4 max-w-md */}
           <a href="#About">ABOUT</a>
