@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FaDesktop } from "react-icons/fa";
+import { FaCode } from "react-icons/fa6";
+
 
 const experiences = [
   {
@@ -7,7 +10,7 @@ const experiences = [
     company: "International Institute of Tropical Agriculture(IITA)",
     location: "Ibadan",
     period: "June 2024 - September 2024",
-    icon: "ti-device-desktop",
+    icon: FaDesktop,
     type: "Professional",
     bullets: [
       "Provided technical support and troubleshooting for computers, printers, routers, and other office equipment.",
@@ -23,7 +26,7 @@ const experiences = [
     company: "Independent",
     location: "",
     period: "May 2025 – Present",
-    icon: "ti-code",
+    icon: FaCode,
     type: "Development",
     bullets: [
       "Developed frontend skills through structured courses, hands-on practice, and personal projects.",
@@ -53,7 +56,7 @@ export default function ExperienceSection() {
 
       <div className="grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-8">
         <div className="flex flex-col gap-2">
-          {experiences.map((exp) => (
+          {experiences.map((exp) =>{ const Icon = exp.icon; return (
             <button
               key={exp.id}
               onClick={() => setActive(exp.id)}
@@ -63,8 +66,8 @@ export default function ExperienceSection() {
                   : "bg-transparent border-transparent text-zinc-400 hover:text-zinc-300 hover:bg-zinc-900"
               }`}
             >
-              <i
-                className={`ti ${exp.icon} text-base mt-0.5 shrink-0 ${
+              <Icon
+                className={` text-base mt-0.5 shrink-0 ${
                   active === exp.id ? "text-blue-400" : "text-zinc-400"
                 }`}
                 aria-hidden="true"
@@ -76,7 +79,7 @@ export default function ExperienceSection() {
                 </p>
               </div>
             </button>
-          ))}
+          )})}
         </div>
 
         <div className="bg-[#111] border border-zinc-800 rounded-2xl p-7 flex flex-col gap-6">
@@ -94,7 +97,7 @@ export default function ExperienceSection() {
                 </p>
               </div>
             </div>
-            <span className="inline-flex items-center gap-1.5 font-['Share_Tech_Mono'] text-[11px] text-blue-400 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full">
+            <span className="inline-flex items-center gap-1.5 font-['Share_Tech_Mono'] text-[12px] text-blue-400 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full">
               <i className="ti ti-calendar text-xs" aria-hidden="true" />
               {current.period}
             </span>
@@ -104,7 +107,7 @@ export default function ExperienceSection() {
             {current.bullets.map((b, i) => (
               <li key={i} className="flex items-start gap-3">
                 <i className="ti ti-chevron-right text-blue-500 text-sm mt-1 shrink-0" aria-hidden="true" />
-                <p className="text-zinc-300 text-sm font-light leading-relaxed">{b}</p>
+                <p className="text-zinc-300 text-[16px] font-light leading-relaxed">{b}</p>
               </li>
             ))}
           </ul>

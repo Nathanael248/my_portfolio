@@ -1,8 +1,8 @@
 export function Projects() {
   const projects = [
     {
-      title: "Shoe e-commerce landing page",
-      image: "/src/assets/Nathaniel.jpg",
+      title: "Mercelia-Shoes e-commerce landing page",
+      image: "",
       description:
         "A clean, conversion-focused storefront built with vanilla HTML and CSS — my final project before moving fully into React.",
       github: "https://github.com/Nathanael248/mercelia.git",
@@ -48,7 +48,7 @@ export function Projects() {
       {/* 2x2 Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 h-180">
         {projects.map((project, index) => (
-          <a href={project.github} target="_blank" rel="noopener noreferrer"
+          <a  href={project.github} target="_blank" rel="noopener noreferrer"
             key={index}
             className="bg-zinc-950 border border-zinc-800 rounded-2xl overflow-hidden hover:border-blue-600 hover:-translate-y-1 transition-all duration-200 cursor-pointer"
           >

@@ -1,4 +1,7 @@
 import React from "react";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+
 
 export default function CTASection() {
   return (
@@ -19,7 +22,7 @@ export default function CTASection() {
         <h2 className="font-['Share_Tech_Mono'] text-3xl sm:text-4xl text-white leading-tight max-w-xl">
           Got a project in <span className="text-blue-500">mind?</span>
         </h2>
-        <p className="text-zinc-400 text-[15px] font-light leading-relaxed max-w-md">
+        <p className="text-zinc-400 text-[16px] font-light leading-relaxed max-w-md">
           I'm open to frontend roles, internships, and freelance projects. If you're building
           something and need a developer who cares about the details — let's talk.
         </p>
@@ -43,19 +46,20 @@ export default function CTASection() {
 
         <div className="flex items-center gap-5 mt-4">
           {[
-            { icon: "ti-brand-github", label: "GitHub" },
-            { icon: "ti-brand-linkedin", label: "LinkedIn" },
-            { icon: "ti-brand-x", label: "X / Twitter" },
-          ].map((s) => (
+            { icon: FaGithub, label: "GitHub" },
+            { icon: FaLinkedinIn, label: "LinkedIn" },
+            { icon: FaXTwitter, label: "X / Twitter" },
+          ].map((s) => { const Icon = s.icon;
+            return (
             <a
               key={s.label}
               href="#"
               aria-label={s.label}
               className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center text-zinc-400 hover:border-blue-500 hover:text-blue-400 transition-all duration-200"
             >
-              <i className={`ti ${s.icon} text-base`} aria-hidden="true" />
+              <Icon className={` text-base`} aria-hidden="true" />
             </a>
-          ))}
+          )})}
         </div>
       </div>
     </section>

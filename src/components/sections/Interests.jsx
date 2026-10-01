@@ -1,20 +1,23 @@
 import React from "react";
+import { IoMusicalNotes } from "react-icons/io5";
+import { TbDeviceImacCode } from "react-icons/tb";
+import { BiGlobe } from "react-icons/bi";
 
 const interests = [
   {
-    icon: "ti-music",
+    icon: IoMusicalNotes,
     label: "Music",
     desc: "Love listening to music and exploring different genres and sounds.",
   },
   {
-    icon: "ti-code",
+    icon: TbDeviceImacCode,
     label: "Building",
-    desc: "Building side projects and exploring new tools and libraries.",
+    desc: "Turning ideas into reality through coding and design.",
   },
   {
-    icon: "ti-bible",
-    label: "Learning",
-    desc: "My faith is central to who I am and how I approach life and work.",
+    icon: BiGlobe,
+    label: "Exploring",
+    desc: "Following new research, technologies, and innovations emerging around the world.",
   },
 ];
 
@@ -32,18 +35,21 @@ export default function InterestsSection() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-        {interests.map((item) => (
+        {interests.map((item) => 
+        {
+          const Icon = item.icon;
+          return (
           <div
             key={item.label}
             className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 flex flex-col items-center text-center gap-4 hover:border-blue-600/50 transition-all duration-200"
           >
             <div className="w-16 h-16 rounded-full bg-[#0d0d0d] border border-zinc-700 flex items-center justify-center">
-              <i className={`ti ${item.icon} text-2xl text-blue-400`} aria-hidden="true" />
+              <Icon className="text-2xl text-blue-400" />
             </div>
             <h3 className="font-['Share_Tech_Mono'] text-white text-base">{item.label}</h3>
             <p className="text-zinc-400 text-sm font-light leading-relaxed">{item.desc}</p>
-          </div>
-        ))}
+          </div>)
+})}
       </div>
     </section>
   );

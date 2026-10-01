@@ -3,7 +3,7 @@ export function Header() {
     <>
       <div
         className="flex justify-between items-space-between  items-center 
-       py-2 px-6 text-sm text-x  bg-blue- h-18 mb-14 font-s  text-gray-600 w-full border-b
+       py-2 px-6 text-sm text-x  bg-blue- h-18 mb-14 font-s  text-gray-400 w-full border-b
        md:
       
      

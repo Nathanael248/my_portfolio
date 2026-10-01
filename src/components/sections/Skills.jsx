@@ -1,77 +1,85 @@
 import React, { useState } from "react";
+import { FaGithub, FaCss3Alt, FaHtml5,  FaReact  } from "react-icons/fa";
+import { TbBrandJavascript, TbApi } from "react-icons/tb";
+import { IoExtensionPuzzleOutline, IoLayersSharp } from "react-icons/io5";
+import { MdDevices } from "react-icons/md";
+import { IoMdSync } from "react-icons/io";
+import { LuBugOff } from "react-icons/lu";
+import { RiTailwindCssFill } from "react-icons/ri";
+
 const skillCat = [
   'Core Web', 'Front-End Development', 'Styling & UI', 'Development Tools & Practices'
 ]
 const skills = [
   
   {
-    icon: "ti-brand-javascript",
+    icon: TbBrandJavascript,
     name: "JavaScript ES6+",
     description:
       "Clear understanding of modern JS syntax, async patterns, and its wider ecosystem.",
   },
   {
-    icon: "ti-brand-html5",
+    icon: FaHtml5,
     name: "HTML5",
     description:
       "Build browser-friendly, semantic markup with good accessibility standards.",
   },
   {
-    icon: "ti-palette",
+    icon: FaCss3Alt,
     name: "CSS3",
     description:
       "Style user-friendly, beautiful designs with layouts, animations, and responsive techniques.",
   },
   {
-    icon: "../assets/icons/react.svg",
+    icon: FaReact,
     name: "React.js",
     description:
       "Build dynamic, component-driven UIs with hooks, state management, and clean architecture.",
   },
   {
-    icon: "ti-wind",
+    icon: RiTailwindCssFill,
     name: "Tailwind CSS",
     description:
       "Rapidly craft consistent, responsive designs using utility-first CSS classes.",
   },
   {
-    icon: "ti-file-type-css",
+    icon: IoLayersSharp,
     name: "CSS Modules",
     description:
       "Scope styles locally to components, keeping projects clean and collision-free.",
   },
   {
-    icon: "ti-brand-git",
+    icon: FaGithub,
     name: "Git & GitHub",
     description:
       "Version control, branching workflows, and collaborative development on remote repositories.",
   },
   {
-    icon: "ti-api",
+    icon: TbApi,
     name: "REST APIs",
     description:
       "Consume and integrate external APIs, handle JSON data, and manage async requests cleanly.",
   },
   {
-    icon: "ti-layout-grid",
+    icon: MdDevices,
     name: "Responsive Design",
     description:
       "Craft layouts that look and work great across all screen sizes and devices.",
   },
   {
-    icon: "ti-components",
+    icon: IoExtensionPuzzleOutline,
     name: "Component Architecture",
     description:
       "Design reusable, maintainable components with clear separation of concerns.",
   },
   {
-    icon: "ti-variable",
+    icon: IoMdSync,
     name: "State Management",
     description:
       "Handle local and global application state effectively using React patterns.",
   },
   {
-    icon: "ti-bug",
+    icon: LuBugOff,
     name: "Debugging",
     description:
       "Diagnose and fix issues using browser DevTools, console inspection, and systematic thinking.",
@@ -129,7 +137,8 @@ export default function SkillsSection() {
             
 
             <div className="grid grid-cols-1          sm:grid-cols-3 gap-6 min-h-[260px]">
-              {skills.map((skill) => { return  (   
+             {skills.map((skill ) => { const Icon = skill.icon;
+             return  (   
               <div>
 {/* 
                 <div  className="text-2xl text-white my-6  font-['Share_Tech_Mono']">{cat}
@@ -139,11 +148,13 @@ export default function SkillsSection() {
 
                     <div
               key={skill.name}
-              className="bg-zinc-900 border border-zinc-800 rounded-2xl p-7 flex flex-col items-center text-center gap-5 hover:border-blue-600/50  transition-all duration-200"
+              className="bg-zinc-900 border border-zinc-800 rounded-2xl p-7 flex flex-col items-center text-center gap-5 hover:-translate-y-1 shadow-lg shadow-gray-400 border-blue-600/50 cursor-pointer  transition-all duration-200 
+              "
               >
               {/* Icon circle */}
               <div className="w-20 h-20 rounded-full bg-[#0d0d0d] border border-zinc-700 flex items-center justify-center shrink-0">
-                <img src={skill.icon} className="text-3xl text-white" aria-hidden="true" />
+                <Icon className="text-3xl text-white" aria-hidden="true" />
+                {/* <IconApi /> */}
               </div>
 
               {/* Name */}
@@ -154,7 +165,7 @@ export default function SkillsSection() {
               </h3>
 
               {/* Description */}
-              <p className="text-zinc-400 text-sm font-light leading-relaxed">
+              <p className="text-zinc-400 text-sm  font-light leading-relaxed">
                 {skill.description}
               </p>
             </div>
@@ -167,7 +178,7 @@ export default function SkillsSection() {
                  )}
                  )}
 
-          
+     
             </div> 
           
           
